@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="485.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.KullanıcıKosesi">
+   <children>
+      <Label layoutX="58.0" layoutY="36.0" text="GARANTİM NE DURUMDA?">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Line endX="286.4000244140625" endY="-7.62939453125E-6" layoutX="567.0" layoutY="77.0" startX="-532.5999755859375" startY="-7.62939453125E-6" />
+      <ImageView fitHeight="39.0" fitWidth="40.0" layoutX="676.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@tel.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="722.0" layoutY="24.0" text="MÜŞTERİ HİZMETLERİ">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="722.0" layoutY="46.0" text="0 216 311 93 93">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Circle fill="#ff1f1f" layoutX="44.0" layoutY="44.0" radius="6.0" stroke="RED" strokeType="INSIDE" />
+      <Label layoutX="38.0" layoutY="97.0" text="Şase numarasını giriniz.">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="btn_sorgula" layoutX="292.0" layoutY="129.0" mnemonicParsing="false" onAction="#btn_sorgula_click" style="-fx-background-color: f70000;" text="SORGULA" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+      <TextField fx:id="txt_sorgu" layoutX="41.0" layoutY="130.0" prefHeight="26.0" prefWidth="219.0" />
+      <Label layoutX="41.0" layoutY="171.0" text="1- 2 YIL GARANTİ + 3 YIL ŞARTLI BAKIM GARANTİSİDİR.&#10;2- GARANTİ 50.000 KM ILE SINIRLANDIRILMIŞTIR.İLK ÖNCE HANGİSİ DOLARSA O ZAMAN GARANTI SONA ERER.&#10;3- HEROMOTOR HER TÜRLÜ DURUMDA KOŞULLARI DEĞİŞTIRME HAKKINI ELİNDE TUTAR." />
+      <ImageView fitHeight="108.0" fitWidth="124.0" layoutX="749.0" layoutY="89.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@5yil.png" />
+         </image>
+      </ImageView>
+      <TableView fx:id="tbl_fatura" layoutX="32.0" layoutY="244.0" prefHeight="198.0" prefWidth="770.0">
+         <columns>
+            <TableColumn fx:id="col_id" prefWidth="36.799986243247986" text="İD" visible="false" />
+            <TableColumn fx:id="col_ad" prefWidth="103.20001983642578" text="AD" />
+            <TableColumn fx:id="col_soy" prefWidth="107.20004272460938" text="SOYAD" />
+            <TableColumn fx:id="col_urun" prefWidth="103.99993896484375" text="ÜRÜN" />
+            <TableColumn fx:id="col_sase" prefWidth="105.5999755859375" text="ŞASE NO" />
+            <TableColumn fx:id="col_tarih" prefWidth="83.99996948242188" text="TARİH" />
+            <TableColumn fx:id="col_tutat" minWidth="0.80010986328125" prefWidth="87.19998168945312" text="TUTAR" />
+            <TableColumn fx:id="col_acıklama" prefWidth="183.99993896484375" text="AÇIKLAMA" />
+         </columns>
+      </TableView>
+   </children>
+</AnchorPane>

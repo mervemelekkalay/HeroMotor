@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="485.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TabPane layoutY="49.0" prefHeight="438.0" prefWidth="900.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="BAYİ KAYIT">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="195.0" prefWidth="254.0">
+                     <children>
+                        <TableView fx:id="tbl_bayikayit" layoutX="23.0" layoutY="49.0" prefHeight="158.0" prefWidth="838.0">
+                          <columns>
+                            <TableColumn fx:id="col_bayi" prefWidth="138.39996910095215" text="BAYİ" />
+                            <TableColumn fx:id="col_adres" prefWidth="432.0000915527344" text="ADRES" />
+                              <TableColumn fx:id="col_tel" prefWidth="129.5999755859375" text="TELEFON" />
+                              <TableColumn fx:id="col_sehir" prefWidth="139.2000732421875" text="ŞEHİR" />
+                          </columns>
+                        </TableView>
+                        <TextField layoutX="27.0" layoutY="225.0" prefHeight="26.0" prefWidth="226.0" promptText="Bayi Adı" />
+                        <TextField layoutX="270.0" layoutY="225.0" promptText="Telefon" />
+                        <TextField layoutX="443.0" layoutY="225.0" promptText="Şehir" />
+                        <TextArea layoutX="27.0" layoutY="259.0" prefHeight="114.0" prefWidth="566.0" promptText="Adres" />
+                        <Button layoutX="700.0" layoutY="228.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="104.0" text="Ekle" />
+                        <Button layoutX="700.0" layoutY="262.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="105.0" text="Sil" />
+                        <Button layoutX="700.0" layoutY="300.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="105.0" text="Güncelle" />
+                        <Button layoutX="700.0" layoutY="338.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="108.0" text="Yenile" />
+                        <Button layoutX="810.0" layoutY="14.0" mnemonicParsing="false" text="Ara" />
+                        <TextField layoutX="594.0" layoutY="14.0" prefHeight="26.0" prefWidth="208.0" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="SERVİS KAYIT">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="402.0" prefWidth="900.0">
+                           <children>
+                              <TableView layoutX="23.0" layoutY="49.0" prefHeight="158.0" prefWidth="838.0">
+                                 <columns>
+                                    <TableColumn prefWidth="138.39996910095215" text="SERVİS" />
+                                    <TableColumn prefWidth="433.6000671386719" text="ADRES" />
+                                    <TableColumn prefWidth="122.4000244140625" text="TELEFON" />
+                                    <TableColumn prefWidth="144.0" text="ŞEHİR" />
+                                 </columns>
+                              </TableView>
+                              <TextField layoutX="27.0" layoutY="225.0" prefHeight="26.0" prefWidth="226.0" promptText="Bayi Adı" />
+                              <TextField layoutX="270.0" layoutY="225.0" promptText="Telefon" />
+                              <TextField layoutX="443.0" layoutY="225.0" promptText="Şehir" />
+                              <TextArea layoutX="27.0" layoutY="259.0" prefHeight="114.0" prefWidth="566.0" promptText="Adres" />
+                              <Button layoutX="700.0" layoutY="228.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="104.0" text="Ekle" />
+                              <Button layoutX="700.0" layoutY="262.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="105.0" text="Sil" />
+                              <Button layoutX="700.0" layoutY="300.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="105.0" text="Güncelle" />
+                              <Button layoutX="700.0" layoutY="338.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="108.0" text="Yenile" />
+                              <Button layoutX="810.0" layoutY="14.0" mnemonicParsing="false" text="Ara" />
+                              <TextField layoutX="594.0" layoutY="14.0" prefHeight="26.0" prefWidth="208.0" />
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+            <Tab text="MÜŞTERİ MESAJLARI">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TableView layoutX="15.0" layoutY="194.0" prefHeight="200.0" prefWidth="874.0">
+                          <columns>
+                            <TableColumn prefWidth="40.80002021789551" text="ID" />
+                            <TableColumn prefWidth="97.5999984741211" text="AD " />
+                              <TableColumn prefWidth="103.99996948242188" text="SOYAD" />
+                              <TableColumn prefWidth="104.00006103515625" text="TELEFON" />
+                              <TableColumn prefWidth="248.80001831054688" text="MAİL" />
+                              <TableColumn prefWidth="284.79998779296875" text="MESAJ" />
+                          </columns>
+                        </TableView>
+                        <TextField layoutX="196.0" layoutY="16.0" prefHeight="26.0" prefWidth="348.0" />
+                        <TextField layoutX="196.0" layoutY="50.0" prefHeight="26.0" prefWidth="348.0" />
+                        <TextArea layoutX="196.0" layoutY="83.0" prefHeight="86.0" prefWidth="347.0" />
+                        <Button layoutX="584.0" layoutY="16.0" mnemonicParsing="false" prefHeight="154.0" prefWidth="71.0" text="GÖNDER" />
+                        <Label layoutX="37.0" layoutY="20.0" text="Alıcı:" />
+                        <Label layoutX="34.0" layoutY="55.0" text="Gönderen:" />
+                        <Label layoutX="35.0" layoutY="93.0" text="Mesaj:" />
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab text="FATURA">
+               <content>
+                  <AnchorPane fx:id="col_adres" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TableView layoutX="12.0" layoutY="14.0" prefHeight="200.0" prefWidth="877.0">
+                          <columns>
+                            <TableColumn prefWidth="44.00000190734863" text="ID" />
+                            <TableColumn prefWidth="106.39998626708984" text="AD" />
+                              <TableColumn prefWidth="75.0" text="SOYAD" />
+                              <TableColumn prefWidth="75.0" text="ÜRÜN" />
+                              <TableColumn prefWidth="172.0" text="ŞASE NO" />
+                              <TableColumn prefWidth="120.00003051757812" text="TARİH" />
+                              <TableColumn prefWidth="63.2000732421875" text="TUTAR" />
+                              <TableColumn prefWidth="118.4000244140625" text="AÇIKLAMA" />
+                          </columns>
+                        </TableView>
+                        <TextField fx:id="txt_ad" layoutX="15.0" layoutY="238.0" />
+                        <TextField fx:id="txt_soyad" layoutX="16.0" layoutY="271.0" />
+                        <TextField fx:id="txt_sase" layoutX="181.0" layoutY="268.0" />
+                        <ComboBox fx:id="cmb_model" layoutX="182.0" layoutY="238.0" prefWidth="150.0" />
+                        <DatePicker fx:id="date_time" layoutX="345.0" layoutY="238.0" prefHeight="26.0" prefWidth="150.0" />
+                        <TextField fx:id="txt_tutar" layoutX="344.0" layoutY="267.0" prefHeight="26.0" prefWidth="150.0" />
+                        <TextField fx:id="txt_acıklama" layoutX="16.0" layoutY="309.0" prefHeight="44.0" prefWidth="479.0" />
+                        <Button fx:id="btn_ekle" layoutX="564.0" layoutY="318.0" mnemonicParsing="false" onAction="#btn_ekle_click" prefHeight="26.0" prefWidth="73.0" text="EKLE" />
+                        <Button fx:id="btn_update" layoutX="660.0" layoutY="318.0" mnemonicParsing="false" onAction="#btn_update_click" text="GÜNCELLE" />
+                        <Button fx:id="btn_ara" layoutX="805.0" layoutY="235.0" mnemonicParsing="false" onAction="#btn_ara_click" text="ARA" />
+                        <TextField fx:id="txt_ara" layoutX="538.0" layoutY="235.0" prefHeight="26.0" prefWidth="258.0" />
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab text="TEST SÜRÜŞ İSTEKLERİ">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TableView layoutX="34.0" layoutY="24.0" prefHeight="200.0" prefWidth="635.0">
+                          <columns>
+                            <TableColumn prefWidth="75.0" text="C1" />
+                            <TableColumn prefWidth="75.0" text="C2" />
+                          </columns>
+                        </TableView>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+      <AnchorPane layoutX="6.0" prefHeight="49.0" prefWidth="900.0" style="-fx-background-color: ee0000;" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ImageView fitHeight="44.0" fitWidth="70.0" layoutX="14.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="5.0" AnchorPane.topAnchor="5.0">
+               <image>
+                  <Image url="@admin.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="54.0" layoutY="12.0" text="HERO MOTOR ADMİN">
+               <font>
+                  <Font name="System Bold" size="22.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

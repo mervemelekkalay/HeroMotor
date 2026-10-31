@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="460.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.TestadminController">
+   <children>
+      <TableView fx:id="tbl_testadmin" layoutX="31.0" layoutY="55.0" prefHeight="460.0" prefWidth="700.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <columns>
+            <TableColumn fx:id="col_id" prefWidth="33.60000455379486" text="İD" />
+          <TableColumn fx:id="col_isim" prefWidth="75.19998168945312" text="İSİM" />
+          <TableColumn fx:id="col_soy" prefWidth="80.79993438720703" text="SOYİSİM" />
+            <TableColumn fx:id="col_tel" prefWidth="103.20001220703125" text="TELEFON" />
+            <TableColumn fx:id="col_mail" prefWidth="98.39996337890625" text="MAİL" />
+            <TableColumn fx:id="col_model" prefWidth="106.39996337890625" text="MODEL" />
+            <TableColumn fx:id="col_sehir" prefWidth="69.60000610351562" text="ŞEHİR" />
+            <TableColumn fx:id="col_mesaj" prefWidth="133.60003662109375" text="MESAJ" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

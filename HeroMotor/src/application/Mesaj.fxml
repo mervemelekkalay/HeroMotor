@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="460.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MesajController">
+   <children>
+      <TableView fx:id="tbl_mesajlar" layoutX="8.0" layoutY="214.0" prefHeight="232.0" prefWidth="683.0">
+        <columns>
+            <TableColumn fx:id="col_id" prefWidth="39.19997978210449" text="İD" />
+          <TableColumn fx:id="col_ad" prefWidth="95.19998931884766" text="AD" />
+          <TableColumn fx:id="col_soy" prefWidth="91.20001220703125" text="SOYAD" />
+            <TableColumn fx:id="col_tel" prefWidth="114.4000244140625" text="TELEFON" />
+            <TableColumn fx:id="col_mail" prefWidth="177.59994506835938" text="MAİL" />
+            <TableColumn fx:id="col_mesaj" prefWidth="164.00004882812505" text="MESAJ" />
+        </columns>
+      </TableView>
+      <Button fx:id="btn_gonder" layoutX="594.0" layoutY="26.0" mnemonicParsing="false" onAction="#btn_gonder_click" prefHeight="154.0" prefWidth="71.0" text="GÖNDER" />
+      <TextField fx:id="txt_alıcı" alignment="CENTER_RIGHT" layoutX="206.0" layoutY="26.0" prefHeight="26.0" prefWidth="348.0" promptText="Alıcı" />
+      <TextField fx:id="txt_gonderen" alignment="BOTTOM_RIGHT" layoutX="206.0" layoutY="60.0" prefHeight="26.0" prefWidth="348.0" promptText="Gönderen" />
+      <TextArea fx:id="txt_mesaj" layoutX="206.0" layoutY="93.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="86.0" prefWidth="347.0" promptText="Mesaj" />
+      <Label layoutX="105.0" layoutY="36.0" text="Alıcı:" />
+      <Label layoutX="102.0" layoutY="71.0" text="Gönderen:" />
+      <Label layoutX="103.0" layoutY="109.0" text="Mesaj:" />
+   </children>
+</AnchorPane>
